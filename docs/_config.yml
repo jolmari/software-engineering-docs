@@ -30,16 +30,15 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-title: Your awesome title
+title: Software Engineering Journal
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: jekyll
+  A github pages site dedicated to writing down my journey in software engineering.
+  Topics include infrastructure, client-side software development, API development, and more.
+url: "https://jolmari.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/software-engineering-docs" # the subpath of your site, e.g. /blog
+twitter_username: ""
+github_username: jolmari
 
 # Build settings
 remote_theme: pages-themes/midnight@v0.2.0
@@ -65,3 +64,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - README.md
+  - ./docs/Gemfile
+  - ./docs/Gemfile.lock

@@ -1,5 +1,6 @@
 # Jekyll - Development environment setup
 
+## Build and run
 [Windows installation](https://jekyllrb.com/docs/installation/windows/)
 
 - Install ruby ex. with chocolatey: `choco install ruby`
