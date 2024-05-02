@@ -1,3 +1,8 @@
+---
+title: DNS
+layout: default
+---
+
 # DNS setup
 
 ## Terminology
