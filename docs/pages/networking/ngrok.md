@@ -39,3 +39,12 @@ and establish a connection to the NGrok endpoint.
 ```sh
 > ngrok http https://localhost:3001 --oauth=google --oauth-allow-email=<allowed-email-address>
 ```
+
+### HTTP with custom domain
+
+Custom domain support requires a paid plan. Use the ngrok-dashboard to configure a custom domain
+name, and then add the `CNAME` settings to the DNS records.
+
+```sh
+> ngrok http --domain=<domain-name> <local-server-url>
+```

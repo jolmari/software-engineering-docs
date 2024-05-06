@@ -54,6 +54,7 @@ It also allows for reverse DNS lookup, letting you find the domain attached to a
 The primary purpose of nslookup is to retrieve detailed information about the specified domain. 
 This information is essential for troubleshooting DNS-related problems.
 
+Example - To find the all DNS record types for `google.com`, run the following command in the terminal: 
 ```sh
-nslookup -type=SOA google.com
+nslookup -type=any google.com
 ```
