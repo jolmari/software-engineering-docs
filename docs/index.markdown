@@ -22,3 +22,5 @@ layout: default
     1. [Package management](./pages/nodejs/package.md)
 5. Documentation
    1. [MkDocs](./pages/cms/mkdocs.md)
+6. Azure
+   1. [Naming convention](./pages/azure/naming.md)
