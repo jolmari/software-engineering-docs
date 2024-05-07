@@ -12,6 +12,10 @@ An example of such naming convention could include the following elements:
 
 Azure also recommends using *lowercase* letters, *dashes* to separate words, and *short* names that are easy to remember and type.
 
+When developing a naming convention, it is important to pick and choose only the relevant pieces of information. It is not necessary, for example, to include the *instance number suffix*, 
+or the *region name* in the resource name if all resources are in the same region and there is only one instance of each resource type. It could be more useful to include more fine-grained
+descriptive information, if the resources are not easily distinguishable by their type alone.
+
 ## Examples
 
 The following [documentation](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming) lists some naming convention examples

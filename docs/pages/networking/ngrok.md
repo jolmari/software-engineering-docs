@@ -4,7 +4,7 @@ layout: default
 ---
 
 # Ngrok
-![Ngrok logo](../assets/images/ngrok-logo.png)
+![Ngrok logo](../../assets/images/ngrok-logo.png)
 
 [NGrok](https://ngrok.com/docs/what-is-ngrok/) is a globally distributes reverse proxy service for exposing local endpoints to the public internet.
 It acts like a front door / proxy that receives traffic and delivers it forward to configured upstream services. This is achieved by running a
