@@ -30,3 +30,31 @@ These steps need to be taken to use Bearer Token authentication with Flux:
 4. Write a kubernetes deployment that logs in to Azure, and then fetches the Azure DevOps access token.
 5. Assign the managed identity to the kubernetes deployment.
 
+## Diagram
+
+:::mermaid
+flowchart TB
+    subgraph Azure
+        E[Azure DevOps]
+    end
+    subgraph Azure Repos
+        F[flux-repository]
+    end
+    subgraph Cluster
+        B(SourceController: flux-source-controller)-->|upsert|C[Secret: flux-system]
+        B-->|clone & monitor|F
+        B-->|reconcile|G
+        C-->|authenticate|F
+        D[Pod: flux-system-repository-identity-sync]-->|get-access-token|E
+        D-->|pause & rerun|D
+        D-->|overwrite|C
+        G[flux-controller]
+    end
+    subgraph CLI
+        A[flux bootstrap]-->|Initialize with PAT|B
+    end
+:::
+
+## Example
+
+The following `deployment.yaml` deployment file shows an example of a looping script that fetches the Azure DevOps access token and stores it in a secret. Example: [deployment.yaml](https://github.com/jolmari/azure-cli-scripts/blob/main/kubernetes/secret-sync/deployment.yml)
