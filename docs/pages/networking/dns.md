@@ -2,7 +2,8 @@
 title: DNS
 layout: default
 ---
-
+%% #-🪴weedy %%
+[[Unsorted]]
 # DNS setup
 
 ## Terminology

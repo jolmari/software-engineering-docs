@@ -24,3 +24,8 @@ layout: default
    1. [MkDocs](./pages/cms/mkdocs.md)
 6. Azure
    1. [Naming convention](./pages/azure/naming.md)
+7. Concepts
+   1. [Cryptography](./pages/concepts/cryptography.md)
+   2. [Finnish Trust Network (FTN)](./pages/concepts/ftn.md)
+8. .NET
+   1. [Azure.Identity with DefaultAzureCredential](./pages/dotnet/credentials.md)

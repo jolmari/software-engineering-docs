@@ -2,7 +2,8 @@
 title: Flux
 layout: default
 ---
-
+%% #-🪴weedy %%
+[[Unsorted]]
 # Bearer Token authentication with Flux
 
 [Flux](https://fluxcd.io/) supports [Bearer Token](https://www.oauth.com/oauth2-servers/access-tokens/) authentication while bootstrapping the service. This is a fairly undocumented process that is mentioned in

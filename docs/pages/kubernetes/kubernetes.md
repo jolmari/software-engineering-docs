@@ -2,7 +2,8 @@
 title: Kubernetes
 layout: default
 ---
-
+%% #-🪴weedy %%
+[[Unsorted]]
 # Kubernetes
 
 ## Concepts
@@ -72,3 +73,35 @@ Generate YAML template, and apply directly to the current cluster:
 ### Check the authorization of a specific service account
 
 `kubectl auth can-i --as=system:serviceaccount:flux-system:default --list`
+
+### List contexts
+
+A Kubernetes context is a group of access parameters that define which cluster you're interacting with, which user you're using, and which namespace you're working in. You can see a list of all the contexts in your kubeconfig file by using the following command:
+
+```sh
+> kubectl config get-contexts
+
+CURRENT   NAME              CLUSTER           AUTHINFO                                     NAMESPACE
+*         sample-dev-rg    cluster-dev-aks    clusterUser_sample-dev-rg_cluster-dev-aks     
+          sample-prod-rg   cluster-prod-aks   clusterUser_sample-prod-rg_cluster-prod-aks
+```
+
+### Switch context
+
+You can switch between contexts by using the following command:
+
+```sh
+> kubectl config use-context <context-name>   
+```
+
+### Get Azure Kubernetes Service updates
+
+To get the available updates for an Azure Kubernetes Service (AKS) cluster, use the following command:
+
+```sh
+> az aks get-upgrades --resource-group <resource-group> --name <cluster-name> --output table
+
+Name     ResourceGroup    MasterVersion    Upgrades
+-------  ---------------  ---------------  ----------
+default  sample-dev-rg   1.29.2           1.29.4
+```
