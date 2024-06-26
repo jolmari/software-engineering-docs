@@ -1,7 +1,4 @@
-%% #-🪴weedy %%
-[[Unsorted]]
-# Keyvault
-
+# Service tiers
 ## Standard
 
 ## Premium 

@@ -2,3 +2,4 @@
 [[JSON Serializing in .NET]]
 [[Console Applications in .NET]]
 [[Azure Credential management]]
+[[Azure client library integration for ASP.NET Core]]

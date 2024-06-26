@@ -1,6 +1,4 @@
-%% #-🪴weedy %%
-[[Unsorted]]
-# CLI - Bicep templates
+# CLI-based build and deployment
 
 ## Build bicep and output results to directory
 

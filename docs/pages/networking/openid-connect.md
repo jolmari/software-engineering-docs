@@ -31,7 +31,6 @@ Signing algorithms are algorithms used to sign tokens issued for your applicatio
 
 RS256 (RSA Signature with SHA-256): An asymmetric algorithm, which means that there are two keys: one public key and one private key that must be kept secret.
 
-### HS256
-
-HS256 (HMAC with SHA-256): A symmetric algorithm, which means that there is only one private key that must be kept secret, and it is shared between the two parties. Since the same key is used both to generate the signature and to validate it, care must be taken to ensure that the key is not compromised.
+### HS256 (HMAC with SHA-256)
+A symmetric algorithm, which means that there is only one private key that must be kept secret, and it is shared between the two parties. Since the same key is used both to generate the signature and to validate it, care must be taken to ensure that the key is not compromised.
 

@@ -21,7 +21,7 @@ There are some problems in the implementation of the official extensions library
 	3. Implement custom `AsymmetricSecurityKey` for key vault
 Some of this functionality can (and will) be copied from the GitHub-repository: https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki/Keyvault-extensions
 ## Add keys to Key Vault
-Follow the instructions to set correct RBAC permissions, and the keys to the Key Vault. [[keyvault]]
+Follow the instructions to set correct RBAC permissions, and the keys to the Key Vault. [[Key vault]]
 # Custom Key Vault crypto provider 
 The following custom parts form the Key Vault cryptography toolkit:
 ## Key Vault Crypto Provider

@@ -1,7 +1,3 @@
-%% #-🪴weedy %%
-[[Unsorted]]
-# Azure DevOps
-
 ## Get Azure DevOps access token
 
 ```sh
